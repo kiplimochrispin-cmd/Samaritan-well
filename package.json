@@ -1,0 +1,14 @@
+{
+  "name": "santa-shepherds-water-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Santa Shepherds Water storefront and admin dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "PORT=8080 node server.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
