@@ -1,0 +1,5 @@
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+package-lock.json linguist-detectable=false
+dist/** linguist-generated=true
+build/** linguist-generated=true
