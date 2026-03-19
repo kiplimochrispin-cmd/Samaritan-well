@@ -30,7 +30,7 @@ const brandRefs = [
 const categoryGroups = [
   {
     title: "PET Bottles",
-    items: ["500ML Round Bottle Blue", "1LTR Classic Bottle Clear", "1.5LTR Round Bottle Blue"],
+    items: ["500ML Retail Bottle Blue", "1LTR Classic Bottle Clear", "1.5LTR Family Bottle Blue"],
   },
   {
     title: "Customised Labelling",
@@ -38,7 +38,7 @@ const categoryGroups = [
   },
   {
     title: "Water Bottles",
-    items: ["Sports Bottles", "Flush Bottles", "Household Bottles"],
+    items: ["Retail Packs", "Table Water Bottles", "Household Bottles"],
   },
   {
     title: "Institution Supply",
@@ -47,9 +47,21 @@ const categoryGroups = [
 ];
 
 const showcaseProducts = [
-  { name: "500ML Round Water Bottle Blue", detail: "Inspired by PET bottle catalog structure used on Thermopak Kenya.", meta: "Popular for retail water packaging" },
-  { name: "1LTR Classic Water Bottle Clear", detail: "Category-first card layout mirrors quote-style bottle catalogs.", meta: "Great for medium-size bottled water lines" },
-  { name: "1.5LTR Round Water Bottle Blue", detail: "Larger-family format with visible CTA and quick product scan.", meta: "Best for take-home and household use" },
+  {
+    name: "500ML Retail Water Bottle Blue",
+    detail: "Compact PET bottle suited for table water, events, kiosks, and retail shelf display.",
+    meta: "Neck finish: 28mm | Use: single-serve retail",
+  },
+  {
+    name: "1LTR Classic Water Bottle Clear",
+    detail: "Balanced mid-size PET bottle with a straight profile for branded bottled water lines.",
+    meta: "Neck finish: 28mm PCO | Use: everyday family consumption",
+  },
+  {
+    name: "1.5LTR Family Water Bottle Blue",
+    detail: "Larger PET bottle format designed for household hydration, delivery packs, and take-home use.",
+    meta: "Closure: screw cap | Use: family and bulk supply",
+  },
 ];
 
 function normalizePhone(value: string): string {
@@ -217,8 +229,8 @@ export default function HomePage() {
                 <span>Forms, totals, and API payloads are typed.</span>
               </article>
               <article className="anim-card">
-                <strong>GSAP motion</strong>
-                <span>Hero and card sections animate in on load.</span>
+                <strong>Animated layout</strong>
+                <span>Hero and product sections ease in on load.</span>
               </article>
             </div>
           </section>
@@ -270,8 +282,8 @@ export default function HomePage() {
 
         <section className="section showcase-layout">
           <aside className="category-sidebar surface anim-card">
-            <p className="eyebrow">Catalog Style</p>
-            <h2>Category-led browsing inspired by Thermopak Kenya.</h2>
+            <p className="eyebrow">Bottle Catalog</p>
+            <h2>Browse bottle families, labelling options, and supply use cases.</h2>
             <div className="category-stack">
               {categoryGroups.map((group) => (
                 <article key={group.title} className="category-group">
@@ -297,7 +309,7 @@ export default function HomePage() {
                 <p>{product.detail}</p>
                 <small>{product.meta}</small>
                 <button type="button" className="btn quote-btn">
-                  Add To Quote
+                  Request Quote
                 </button>
               </article>
             ))}
@@ -309,8 +321,7 @@ export default function HomePage() {
             <p className="eyebrow">Shop</p>
             <h2>Choose bottle and container sizes</h2>
             <p className="helper">
-              Comparison notes from Thermopak Kenya: their catalog emphasizes category filters, quote buttons,
-              and clear bottle naming such as 500ML, 1LTR, and 1.5LTR PET bottle variations.
+              Available formats cover common bottled-water needs, from compact 500ML retail packs to 20L refill containers for homes and institutions.
             </p>
           </div>
           <div className="products">
