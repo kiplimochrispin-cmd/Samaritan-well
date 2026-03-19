@@ -39,4 +39,4 @@ Open:
 - Use a real payment gateway before live card payments.
 
 ## Repository
-- https://github.com/kiplimochrispin-cmd/Samaritan-well
+- https://github.com/chrispinKiplimo/Samaritan-well
