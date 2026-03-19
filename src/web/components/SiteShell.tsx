@@ -18,14 +18,27 @@ function BottleMark() {
   );
 }
 
+function SocialIcon({ label }: { label: string }) {
+  return <span className="social-icon" aria-hidden="true">{label}</span>;
+}
+
 export default function SiteShell({ children, ctaHref = "/", ctaLabel = "Home", admin = false }: SiteShellProps) {
   const [open, setOpen] = useState(false);
 
   return (
     <div>
-      <header className="hero shell">
-        <nav className="nav">
-          <Link className="brand-lockup" to="/">
+      <header className="hero">
+        <div className="utility-bar">
+          <div className="shell utility-inner">
+            <p><strong>Working Hours:</strong> Monday - Friday: 8am to 5pm</p>
+            <p><strong>Lipa Na M-Pesa:</strong> 309900</p>
+            <p><strong>Contact:</strong> +254 722 207787, +254 733 207787</p>
+            <a href="mailto:sales@santashepherdswater.co.ke">sales@santashepherdswater.co.ke</a>
+          </div>
+        </div>
+
+        <div className="shell brand-band">
+          <Link className="brand-lockup brand-lockup-large" to="/">
             <BottleMark />
             <span>
               <strong>{admin ? "Santa Shepherds Water Admin" : "Santa Shepherds Water"}</strong>
@@ -33,10 +46,25 @@ export default function SiteShell({ children, ctaHref = "/", ctaLabel = "Home", 
             </span>
           </Link>
 
-          <button className="menu-toggle" type="button" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
-            Menu
-          </button>
+          <div className="brand-side">
+            <div className="social-list" aria-label="Social links">
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"><SocialIcon label="f" /></a>
+              <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X"><SocialIcon label="x" /></a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><SocialIcon label="in" /></a>
+              <a href="https://wa.me/254757674774" target="_blank" rel="noreferrer" aria-label="WhatsApp"><SocialIcon label="wa" /></a>
+            </div>
 
+            <button className="menu-toggle menu-toggle-icon" type="button" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
+              <span className="menu-bars" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <nav className="nav shell">
           <div className={`nav-links ${open ? "is-open" : ""}`}>
             <Link to="/" onClick={() => setOpen(false)}>Home</Link>
             <Link to="/programs" onClick={() => setOpen(false)}>Programs</Link>

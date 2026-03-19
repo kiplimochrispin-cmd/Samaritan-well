@@ -27,6 +27,31 @@ const brandRefs = [
   { name: "Nestle Pure Life", summary: "Household-oriented bottled water brand built around accessible daily hydration." }
 ];
 
+const categoryGroups = [
+  {
+    title: "PET Bottles",
+    items: ["500ML Round Bottle Blue", "1LTR Classic Bottle Clear", "1.5LTR Round Bottle Blue"],
+  },
+  {
+    title: "Customised Labelling",
+    items: ["IML", "Printed", "Sleeving"],
+  },
+  {
+    title: "Water Bottles",
+    items: ["Sports Bottles", "Flush Bottles", "Household Bottles"],
+  },
+  {
+    title: "Institution Supply",
+    items: ["Schools", "Clinics", "Bulk Delivery"],
+  },
+];
+
+const showcaseProducts = [
+  { name: "500ML Round Water Bottle Blue", detail: "Inspired by PET bottle catalog structure used on Thermopak Kenya.", meta: "Popular for retail water packaging" },
+  { name: "1LTR Classic Water Bottle Clear", detail: "Category-first card layout mirrors quote-style bottle catalogs.", meta: "Great for medium-size bottled water lines" },
+  { name: "1.5LTR Round Water Bottle Blue", detail: "Larger-family format with visible CTA and quick product scan.", meta: "Best for take-home and household use" },
+];
+
 function normalizePhone(value: string): string {
   const digits = value.replace(/\D/g, "");
   if (digits.startsWith("254")) return `+${digits.slice(0, 12)}`;
@@ -243,10 +268,50 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="section showcase-layout">
+          <aside className="category-sidebar surface anim-card">
+            <p className="eyebrow">Catalog Style</p>
+            <h2>Category-led browsing inspired by Thermopak Kenya.</h2>
+            <div className="category-stack">
+              {categoryGroups.map((group) => (
+                <article key={group.title} className="category-group">
+                  <h3>{group.title}</h3>
+                  <ul>
+                    {group.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </aside>
+
+          <div className="showcase-grid">
+            {showcaseProducts.map((product, index) => (
+              <article key={product.name} className="showcase-card surface anim-card">
+                <div className={`bottle-visual bottle-visual-${index + 1}`} aria-hidden="true">
+                  <span className="bottle-cap" />
+                  <span className="bottle-body" />
+                </div>
+                <h3>{product.name}</h3>
+                <p>{product.detail}</p>
+                <small>{product.meta}</small>
+                <button type="button" className="btn quote-btn">
+                  Add To Quote
+                </button>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="shop" className="section">
           <div className="section-head">
             <p className="eyebrow">Shop</p>
             <h2>Choose bottle and container sizes</h2>
+            <p className="helper">
+              Comparison notes from Thermopak Kenya: their catalog emphasizes category filters, quote buttons,
+              and clear bottle naming such as 500ML, 1LTR, and 1.5LTR PET bottle variations.
+            </p>
           </div>
           <div className="products">
             {products.map((product) => (
