@@ -3,10 +3,25 @@
   "version": "1.0.0",
   "private": true,
   "description": "Santa Shepherds Water storefront and admin dashboard",
-  "main": "server.js",
+  "main": "build/server.js",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
   "scripts": {
-    "start": "node server.js",
-    "dev": "PORT=8080 node server.js"
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "start": "npm run build && node build/server.js",
+    "dev": "vite build && tsc -p tsconfig.server.json && PORT=8080 node build/server.js",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.server.json --noEmit"
   },
   "engines": {
     "node": ">=24"
