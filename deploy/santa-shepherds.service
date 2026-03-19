@@ -1,0 +1,16 @@
+[Unit]
+Description=Santa Shepherds Water Site
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/santa-shepherds-water
+ExecStart=/usr/bin/node /opt/santa-shepherds-water/server.js
+Restart=always
+RestartSec=3
+Environment=NODE_ENV=production
+Environment=PORT=8080
+Environment=HOST=127.0.0.1
+
+[Install]
+WantedBy=multi-user.target
