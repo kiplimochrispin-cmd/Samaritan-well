@@ -3,145 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Santa Shepherds Water | Purchase Online</title>
+    <title>Santa Shepherds Water | Clean Water Delivery in Eldoret</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./site.css" />
   </head>
   <body>
-    <header class="hero">
+    <header class="hero shell">
       <nav class="nav">
-        <p class="brand">Santa Shepherds Water</p>
-        <div class="nav-links">
+        <a class="brand-lockup" href="./index.html" aria-label="Santa Shepherds Water home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <path
+                d="M26 8h12v8l6 7v26c0 4-3 7-7 7H27c-4 0-7-3-7-7V23l6-7z"
+                fill="currentColor"
+              />
+              <path
+                d="M24 31c5 1 7 6 11 6s6-5 11-6v10c0 7-6 13-13 13s-13-6-13-13V31c1 0 3 0 4 0z"
+                fill="#dff8ff"
+              />
+            </svg>
+          </span>
+          <span>
+            <strong>Santa Shepherds Water</strong>
+            <small>Fresh delivery for homes and institutions</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          Menu
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#partners">Global Water Brands</a>
           <a href="#shop">Shop</a>
           <a href="./programs.html">Programs</a>
-          <a href="#about">About Us</a>
-          <a href="#history">History</a>
-          <a href="#mission">Mission & Vision</a>
-          <a href="#location">Location</a>
-          <a href="./contact.html">Contact Us</a>
+          <a href="./contact.html">Contact</a>
           <a href="./admin.html">Admin</a>
-          <a class="btn btn-soft" href="#shop">Shop Water</a>
+          <a class="btn btn-soft" href="#shop">Order Water</a>
         </div>
       </nav>
+
       <div class="hero-inner">
-        <div>
-          <p class="eyebrow">Eldoret Delivery</p>
-          <h1>Clean Water Delivered to Homes, Parishes, Schools, and Clinics.</h1>
+        <section class="hero-copy surface">
+          <p class="eyebrow">Eldoret Water Access</p>
+          <h1>Clean, dependable drinking water with a friendlier digital experience.</h1>
           <p class="lead">
-            Order returnable jars or PET options online and schedule doorstep delivery.
-            Local support available for bulk and humanitarian programs.
+            Santa Shepherds Water helps families, parishes, schools, clinics, and small
+            businesses order bottled water and refill containers with a smooth checkout flow on
+            both mobile and desktop.
           </p>
+
           <div class="hero-actions">
-            <a class="btn" href="#shop">Start Order</a>
+            <a class="btn" href="#shop">Start an Order</a>
+            <a class="btn btn-soft" href="./contact.html">Talk to the Team</a>
           </div>
-        </div>
-        <aside class="stat-card">
-          <h2>Today&apos;s Quick Facts</h2>
-          <ul>
-            <li><strong>Delivery window:</strong> Same day (city center)</li>
-            <li><strong>Minimum order:</strong> KES 250</li>
-            <li><strong>Hotline:</strong> +254 757 674774</li>
-            <li><strong>Service area:</strong> Eldoret and nearby wards</li>
+
+          <div class="hero-metrics">
+            <article>
+              <strong>Same-day support</strong>
+              <span>City-center orders handled quickly</span>
+            </article>
+            <article>
+              <strong>Flexible packs</strong>
+              <span>From 500 ml bottles to 20 L refill jars</span>
+            </article>
+            <article>
+              <strong>Mobile-first checkout</strong>
+              <span>Simple forms, readable cards, clear totals</span>
+            </article>
+          </div>
+        </section>
+
+        <aside class="hero-panel surface">
+          <div class="bottle-badge" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <path
+                d="M26 7h12v9l5 6v27c0 4-3 8-8 8H29c-5 0-8-4-8-8V22l5-6z"
+                fill="currentColor"
+              />
+              <path
+                d="M24 33c4 1 7 5 10 5 4 0 6-4 10-5v9c0 7-5 12-12 12s-12-5-12-12v-9c1 0 3 0 4 0z"
+                fill="#d7f6ff"
+              />
+            </svg>
+          </div>
+          <p class="eyebrow">Quick Facts</p>
+          <h2>Designed for people who need water fast, not friction.</h2>
+          <ul class="feature-list">
+            <li>Readable sections and clear actions on small screens</li>
+            <li>Sticky order summary for easier desktop checkout</li>
+            <li>WhatsApp and phone support for direct help</li>
+            <li>Structured pages for products, programs, and contact details</li>
           </ul>
+          <div class="mini-map">
+            <strong>Eldoret Service Area</strong>
+            <span>Malaba Road, Eldoret, Kenya</span>
+            <span>Coverage: city neighborhoods and nearby institutions</span>
+          </div>
         </aside>
       </div>
     </header>
 
-    <main class="content">
-      <section id="about" class="section">
+    <main class="content shell">
+      <section id="about" class="section surface">
         <div class="section-head">
           <p class="eyebrow">About Us</p>
-          <h2>Santa Shepherds Water Initiative</h2>
+          <h2>A local water platform with a calmer, clearer customer experience.</h2>
         </div>
-        <p>
-          Santa Shepherds Water is a community-centered water access platform aligned with the
-          Catholic Diocese of Eldoret's social and pastoral development priorities. The platform
-          supports reliable access to safe water for families, institutions, and vulnerable groups
-          through local distribution and refill models.
-        </p>
-        <p>
-          The initiative theme is <strong>Faith in Action through Safe Water and Human Dignity</strong>.
-          This reflects the Diocese commitment to integrated evangelization and practical social support.
-        </p>
+        <div class="split-copy">
+          <p>
+            Santa Shepherds Water serves Eldoret with bottled drinking water and refill options for
+            homes, schools, churches, clinics, and offices. The platform is built to reduce the
+            effort required to browse products, place an order, and reach support.
+          </p>
+          <p>
+            The updated interface focuses on comfort and usability: larger touch targets, stronger
+            spacing, clearer pricing, and sections that adapt cleanly from phone screens to wide
+            desktop layouts.
+          </p>
+        </div>
       </section>
 
-      <section id="history" class="section">
+      <section id="partners" class="section">
         <div class="section-head">
-          <p class="eyebrow">History</p>
-          <h2>Catholic Diocese of Eldoret Background</h2>
+          <p class="eyebrow">Global Water Brands</p>
+          <h2>Well-known bottled water companies used here as market reference points.</h2>
+          <p class="section-intro">
+            These brands are shown as familiar global examples of how bottled water is packaged and
+            positioned. They are not listed as partners of Santa Shepherds Water.
+          </p>
         </div>
-        <p>
-          The Catholic Diocese of Eldoret serves communities in and around Eldoret within Kenya's
-          Rift Valley region. Over the years, diocesan pastoral structures have supported both
-          spiritual formation and social service programs across education, health, and community
-          welfare.
-        </p>
-        <p>
-          The Diocese currently references leadership under <strong>Rt. Rev. Dominic Kimengich</strong>,
-          with administrative and pastoral focus tied to Nandi, Uasin Gishu, and Elgeyo Marakwet
-          contexts.
-        </p>
+        <div class="brand-grid">
+          <article class="info-card">
+            <p class="eyebrow">Reference Brand</p>
+            <h3>Evian</h3>
+            <p>Premium bottled water brand known for a clean, minimalist presentation style.</p>
+          </article>
+          <article class="info-card">
+            <p class="eyebrow">Reference Brand</p>
+            <h3>Aquafina</h3>
+            <p>Widely recognized packaged water brand with mass-market retail visibility.</p>
+          </article>
+          <article class="info-card">
+            <p class="eyebrow">Reference Brand</p>
+            <h3>Dasani</h3>
+            <p>Global bottled water label noted for strong supermarket and convenience distribution.</p>
+          </article>
+          <article class="info-card">
+            <p class="eyebrow">Reference Brand</p>
+            <h3>Nestle Pure Life</h3>
+            <p>Household-oriented bottled water brand built around accessible daily hydration.</p>
+          </article>
+        </div>
       </section>
 
-      <section id="mission" class="section section-grid">
+      <section class="section section-grid">
         <article class="info-card">
-          <p class="eyebrow">Vision</p>
-          <h3>Instrument of Love, Peace, and Reconciliation</h3>
+          <p class="eyebrow">Why It Feels Better</p>
+          <h3>Friendly Mobile UX</h3>
           <p>
-            To be an instrument of God&apos;s love, peace, and reconciliation while promoting integral
-            human development in all served communities.
+            Phone visitors get simplified spacing, easy-to-tap controls, collapsible navigation,
+            and single-column sections that reduce visual overload.
           </p>
         </article>
         <article class="info-card">
-          <p class="eyebrow">Mission</p>
-          <h3>Evangelization with Integral Human Development</h3>
+          <p class="eyebrow">Why It Works Better</p>
+          <h3>Comfortable Desktop Layout</h3>
           <p>
-            To advance evangelization together with practical social action that strengthens
-            household well-being, health, education, and long-term resilience.
+            Larger screens benefit from balanced grids, a visible order summary, and clearer content
+            grouping so users can scan quickly before they buy.
           </p>
         </article>
         <article class="info-card">
-          <p class="eyebrow">Goals</p>
-          <h3>Water Access Program Goals</h3>
-          <ul>
-            <li>Improve access to safe and affordable drinking water.</li>
-            <li>Support schools, clinics, and parish service points with dependable supply.</li>
-            <li>Promote hygiene and household water safety education.</li>
-            <li>Establish accountable distribution and refill cycles for sustainability.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="location" class="section section-grid">
-        <article class="info-card">
-          <p class="eyebrow">Location</p>
-          <h3>Service Geography</h3>
-          <ul>
-            <li><strong>Country:</strong> Kenya</li>
-            <li><strong>Region:</strong> Rift Valley</li>
-            <li><strong>City:</strong> Eldoret</li>
-            <li><strong>Coverage context:</strong> Uasin Gishu, Nandi, Elgeyo Marakwet</li>
-          </ul>
-        </article>
-        <article class="info-card">
-          <p class="eyebrow">Address</p>
-          <h3>Contact and Delivery Office</h3>
-          <ul>
-            <li><strong>Directory address:</strong> Malaba Rd, 842-30100, Eldoret, Kenya</li>
-            <li><strong>Phone:</strong> +254-532063981</li>
-            <li><strong>WhatsApp:</strong> +254 757 674774</li>
-            <li>
-              <strong>Official contact:</strong>
-              <a href="https://www.cde.co.ke/index.php/contact-us" target="_blank" rel="noreferrer">
-                Diocese Contact Page
-              </a>
-            </li>
-          </ul>
+          <p class="eyebrow">Support</p>
+          <h3>Direct Help When Needed</h3>
+          <p>
+            The site keeps visible contact options for calls, WhatsApp follow-up, and delivery
+            coordination when customers need assistance beyond the web form.
+          </p>
         </article>
       </section>
 
@@ -149,12 +199,15 @@
         <div class="section-head">
           <p class="eyebrow">Shop</p>
           <h2>Choose bottle and container sizes</h2>
+          <p class="section-intro">
+            Select quantities below to build your order. Totals update automatically.
+          </p>
         </div>
         <div class="products" id="products"></div>
       </section>
 
       <section class="section checkout-wrap">
-        <div class="checkout-panel">
+        <div class="checkout-panel surface">
           <div class="section-head">
             <p class="eyebrow">Checkout</p>
             <h2>Confirm your order</h2>
@@ -174,7 +227,11 @@
             </label>
             <label>
               Delivery notes
-              <textarea name="notes" rows="3" placeholder="Gate color, estate, nearest landmark..."></textarea>
+              <textarea
+                name="notes"
+                rows="3"
+                placeholder="Gate color, estate, nearest landmark..."
+              ></textarea>
             </label>
             <fieldset class="payment-group">
               <legend>Payment Method</legend>
@@ -214,7 +271,7 @@
               </div>
             </div>
             <button type="submit" class="btn">Place Order</button>
-            <p class="helper">This demo submits to a local HTTP endpoint.</p>
+            <p class="helper">This demo submits to the local order endpoint.</p>
           </form>
           <section id="confirmation" class="confirmation is-hidden">
             <p class="eyebrow">Order Received</p>
@@ -225,7 +282,7 @@
           </section>
         </div>
 
-        <aside class="cart-panel">
+        <aside class="cart-panel surface">
           <h3>Order Summary</h3>
           <div id="cart-lines" class="cart-lines"></div>
           <dl class="totals">
@@ -248,23 +305,20 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-grid">
+      <div class="footer-grid shell">
         <section>
           <h3>Santa Shepherds Water</h3>
           <p>
-            A community water purchase and distribution platform inspired by the social mission
-            values of the Catholic Diocese of Eldoret.
+            A cleaner storefront for bottled water delivery, refill orders, and local support in
+            Eldoret.
           </p>
         </section>
         <section>
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#mission">Mission & Vision</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./programs.html">Programs</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
-            <li><a href="./admin.html">Admin Dashboard</a></li>
             <li><a href="#shop">Shop Water</a></li>
           </ul>
         </section>
@@ -274,16 +328,11 @@
             <li>Malaba Rd, Eldoret, Kenya</li>
             <li>Phone: +254-532063981</li>
             <li>WhatsApp: +254 757 674774</li>
-            <li>
-              <a href="https://www.cde.co.ke/" target="_blank" rel="noreferrer">
-                www.cde.co.ke
-              </a>
-            </li>
           </ul>
         </section>
       </div>
       <p class="copyright">
-        &copy; 2026 Santa Shepherds Water Initiative. Theme: Faith in Action through Safe Water and Human Dignity.
+        &copy; 2026 Santa Shepherds Water Initiative. Friendly ordering for mobile and desktop users.
       </p>
     </footer>
 
